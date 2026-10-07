@@ -31,16 +31,17 @@
   </div>
 
   <h2>Who Loci is for</h2>
-  <p>Loci is a learning app for children aged roughly 6–8, set up and supervised by a parent or carer (“grown-up”).
+  <p>Loci is a learning app for children aged roughly 8–12, set up and supervised by a parent or carer (“grown-up”).
   It is designed to meet Google Play’s Families policy and the principles of COPPA and GDPR-K: no data is collected
   from children, and no data is shared with anyone.</p>
 
   <h2>What is stored — and where</h2>
   <table>
     <tr><th>Information</th><th>Where it lives</th><th>Why</th></tr>
-    <tr><td>Child profile: first name or nickname, avatar emoji, age band</td><td>On the device only (app database)</td><td>To greet the child and choose age-appropriate lessons</td></tr>
-    <tr><td>Learning progress: lessons completed, answers, stars, streak days, skill ratings</td><td>On the device only</td><td>To plan the next lesson and show progress to the child and grown-up</td></tr>
-    <tr><td>Grown-up settings: PIN (stored as a salted hash, never in plain text), reward ladder, screen-time and quiet-hours rules, reminder time</td><td>On the device only</td><td>To protect the grown-ups area and apply the family’s rules</td></tr>
+    <tr><td>Child profile: first name or nickname, explorer badge, age, home language and preferred English voice</td><td>On the device only (app database)</td><td>To greet the child, choose a starting level and read instructions in a familiar way</td></tr>
+    <tr><td>Learning progress: lessons completed, answers, hints used, stars, belts, streak days, skill states, town pieces and chests</td><td>On the device only</td><td>To plan the next lesson and show progress to the child and grown-up</td></tr>
+    <tr><td>“Show a grown-up” notes: when the microphone is on, the words the device recognised while the child explained a lesson are kept as text (never audio) so the grown-up can read them</td><td>On the device only</td><td>So a grown-up can see what the child explained; deleted with the profile</td></tr>
+    <tr><td>Grown-up settings: PIN and its recovery code (both stored as salted hashes, never in plain text), reward ladder, daily minutes, reminder time, microphone and other switches</td><td>On the device only</td><td>To protect the grown-ups area and apply the family’s rules</td></tr>
   </table>
   <p>None of this is transmitted, backed up to our servers (we have none) or included in Android cloud backup —
   backup is disabled for the app. Deleting a child profile in the grown-ups area erases every record about them;
@@ -50,16 +51,17 @@
   <ul>
     <li><strong>Notifications</strong> (optional): only if a grown-up turns on the daily practice reminder. The
     reminder is generated on the device and contains no personal information.</li>
-    <li><strong>Microphone</strong> (optional, only if a grown-up turns it on): lets a child say a word back to Lumi in
-    the listening activities. Speech is recognised <em>on the device</em> using the phone’s built-in offline recogniser;
-    audio is never recorded, stored or sent anywhere. If the device cannot recognise speech offline, the feature is
-    simply unavailable and the tap-the-sounds version is used instead.</li>
+    <li><strong>Microphone</strong> (optional, only if a grown-up turns it on): lets a child read aloud to Pip, give a
+    short talk in Speak Up and explain a lesson back in “Show a grown-up”. Speech is recognised <em>on the device</em>
+    using the phone’s built-in offline recogniser and is only ever used to confirm that the child had a go — never to
+    mark them wrong. Audio is never recorded, stored or sent anywhere; only the recognised words of a teach-back are
+    kept as text on the device. If the device cannot recognise speech offline, the child taps “I read it” instead.</li>
     <li>Loci does <strong>not</strong> request internet, location, contacts, camera, storage or any identifier.</li>
   </ul>
 
   <h2>Text-to-speech</h2>
-  <p>Lumi’s voice uses the text-to-speech engine already installed on the device. Loci only passes it the words to
-  read aloud; it receives nothing back.</p>
+  <p>Pip’s voice uses the text-to-speech engine already installed on the device (British or American English, with
+  optional Hindi help for instructions). Loci only passes it the words to read aloud; it receives nothing back.</p>
 
   <h2>Advertising, purchases and analytics</h2>
   <p>There are none. Loci is free, contains no ads, no in-app purchases, no links out of the app in the child’s area,
